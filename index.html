@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Up</title>
+    <style>
+        body{
+            overscroll-behavior: none;
+        }
+        canvas {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -9999;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            width: 100vm;
+            height: 100vh;
+            /* border: 1px solid #f00; */
+        }
+        h1,h2 {
+        font-family: 'Noto Sans', sans-serif;
+        }
+        h3,h4,h5 {
+        font-family: 'Inconsolata', monospace;
+        }
+        p {
+        font-family: 'Source Sans Pro', sans-serif;
+        }
+        a {
+        /*font-family: 'Noto Sans', sans-serif*/
+        font-family: 'Inconsolata', monospace;
+        color: white;
+        letter-spacing: .1em;
+        }
+        a:hover {
+            color: white;
+            text-decoration: none;
+        }
+        a::after {
+            color: white;
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: white;
+            transition: width ease-in-out .2s;
+        }
+        a:hover::after {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid;
+            /* width: 100%; */
+        }
+        section {
+            height: 100vh;
+            padding-top: 15%;
+        }
+        .intro {
+            color: white;
+            overflow: hidden;
+        }
+        .navbar {
+            padding: 16px 32px 0 32px;
+        }
+        .intro-title {
+            font-size: 4.5em;
+        }
+        .intro-sub {
+            margin-top: 2.5%;
+        }
+        .divider {
+            border-bottom: 2px solid;
+            width: 50%;
+            margin-top: 5%;
+        }
+        .intro-p {
+            margin-top: 5%;
+        }
+
+        /* canvas {
+            width: 100vw;
+            height: 100vh;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -9999;
+        } */
+        /* end three js */
+        .sector2 {
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+
+        <a class="navbar-item mr-auto" href="#">TEEMWORK STUDIO</a>
+        <!-- <a class="navbar-item mr-auto" href="#">Tema</a> -->
+        <a class="navbar-item ml-auto" style="float: right" href="#">MENU</a>
+        
+      </nav>
+  
+      <section class="intro">
+        <canvas></canvas>
+  
+        <div class="container">
+          <h1 class="intro-title">Creative Agency based in Tema, Ghana.</h1>
+          <h3 class="intro-sub">Design.. Illustrasion..</h3>
+            <div class="divider"></div>
+          <h5 class="intro-p">made with love from, Tema </h5>
+        </div>
+  
+      </section>
+      <section class="sector2">
+        <div class="container">
+          <h1>
+            credit rogier de boeve & yuri Art
+            If you are having trouble, try the archived copy on GitHub 
+            https://github.com/nanayaw-williams
+            
+            </h1>
+        </div>
+      </section>
+    
+   <div id=container>
+       <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+           Repellendus reprehenderit qui voluptates et quaerat nostrum, 
+           aut distinctio, commodi corporis a atque quia aspernatur error 
+           adipisci doloremque. 
+           Vitae quae similique pariatur!</h2>
+   </div>
+
+   <script src="app.js"></script>
+
+</body>
+</html>
